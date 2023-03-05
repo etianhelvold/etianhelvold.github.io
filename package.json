@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ci": "ng build --output-path docs --base-href etianhelvold.github.io",
-    "test:ci": "ng test --watch=false --code-coverage"
+    "build:ci": "ng build --output-path docs --base-href /etianhelvold.github.io/",
+    "test:ci": "ng test --watch=false --code-coverage --browsers ChromeHeadless"
   },
   "private": true,
   "dependencies": {
