@@ -1,0 +1,28 @@
+nav.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav.headerNav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.headerNav ul li {
+  margin: 0 1rem;
+}
+
+nav.headerNav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.headerNav ul li a:hover {
+  text-decoration: underline;
+}
