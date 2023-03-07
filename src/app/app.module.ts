@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
+import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.component';
 
 @NgModule({
   declarations: [
