@@ -29,13 +29,13 @@ jobs:
         cache: 'npm'
         
     - name: Run npm ci
-    - run: npm ci
+      run: npm ci
 
     - name: Run unit tests
-    - run: npm run test:ci
+      run: npm run test:ci
 
     - name: Run npm build
-    - run: npm run build:ci
+      run: npm run build:ci
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
