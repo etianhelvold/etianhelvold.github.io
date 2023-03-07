@@ -1,5 +1,4 @@
 # etianhelvold.github.io
-[![Angular CI](https://github.com/etianhelvold/etianhelvold.github.io/actions/workflows/angular.yml/badge.svg?branch=main)](https://github.com/etianhelvold/etianhelvold.github.io/actions/workflows/angular.yml)
 
 Angular personal portfolio app
 
