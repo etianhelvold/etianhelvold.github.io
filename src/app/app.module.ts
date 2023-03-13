@@ -10,6 +10,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactPageComponent,
     ProjectsPageComponent,
     NotfoundPageComponent,
-    FooterComponent
+    FooterComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,

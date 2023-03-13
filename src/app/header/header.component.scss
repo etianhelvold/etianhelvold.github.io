@@ -2,9 +2,11 @@ nav.headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 15px;
   background-color: #333;
   color: #fff;
+  min-height:50px;
+  box-sizing: border-box;
 }
 
 nav.headerNav ul {
