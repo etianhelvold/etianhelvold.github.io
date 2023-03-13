@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppModule } from '../app.module';
 
 import { ContactPageComponent } from './contact-page.component';
 
@@ -8,7 +9,8 @@ describe('ContactPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactPageComponent ]
+      declarations: [ ContactPageComponent ],
+      imports: [ AppModule ]
     })
     .compileComponents();
 
