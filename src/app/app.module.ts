@@ -8,16 +8,18 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
-import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationTabsComponent,
+    HeaderComponent,
     HomePageComponent,
     ContactPageComponent,
     ProjectsPageComponent,
-    NotfoundPageComponent
+    NotfoundPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
