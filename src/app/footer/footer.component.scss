@@ -1,12 +1,13 @@
 .footer {
   background-color: #333;
   color: #fff;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
 }
 
 .container {
   text-align: end;
-  margin: 1rem;
+  padding: 0.25rem;
+}
+
+.last-updated{
+  margin: 0 1rem 0 0;
 }
