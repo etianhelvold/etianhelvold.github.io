@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'app-home-page',
@@ -6,8 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
-  name = 'João Iglésias';
-  jobTitle = 'Full Stack Developer';
+  greeting = 'Greetings traveler!';
+
+  welcome = 'Welcome to my corner in the cyberspace!';
+
+  DATE_STARTED_WORKING = DateTime.fromFormat('20-03-2021', 'dd-LL-yyyy');
+  yearsOfExperience = this.calculateYearsOfExperience();
+
+  farewell = `Thank you for visiting my page, and I hope you enjoy exploring my work!`;
 
   languages: string[] = ['Java', 'Javascript/Typescript', 'C#', 'C++'];
 
@@ -29,7 +36,12 @@ export class HomePageComponent {
   ];
 
   experience: string[] = [
+    'Trainee (MAR 2021 - JUN 2022) at Deloitte',
     'Junior Programmer (JUN 2021 - AUG 2022) at Deloitte',
     'Experienced Programmer (SEP 2022 - Present) at Deloitte',
   ];
+
+  calculateYearsOfExperience(): string {
+    return DateTime.now().diff(this.DATE_STARTED_WORKING).toFormat('y');
+  }
 }

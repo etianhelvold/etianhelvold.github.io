@@ -5,36 +5,39 @@
 
 <div class="container">
   <div class="header">
-    <h1 class="title glitch">{{ name }}</h1>
-    <h2 class="subtitle">{{ jobTitle }}</h2>
+    <h1 class="title glitch">{{ greeting }}</h1>
+    <h2 class="subtitle">{{ welcome }}</h2>
   </div>
   <div class="content">
     <div class="introduction">
-      <h4 class="section-title">Greetings traveler!</h4>
-      <h4 class="section-title">Welcome to my corner in the cyberspace!</h4>
+      <h4 class="section-title">The name is João</h4>
+      <h4 class="section-title">and I'm a full-stack developer</h4>
       <p class="introductory-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-        fringilla leo, id sagittis sapien. Sed ultrices ut arcu quis ultricies.
-        Vivamus lectus lacus, malesuada quis lorem vel, interdum tincidunt quam.
-        Nunc dictum purus diam, sed semper ipsum dictum a. Nullam sapien massa,
-        cursus eget mattis maximus, feugiat a nisi. Praesent sit amet dui in
-        ante viverra lobortis non eu risus. Curabitur finibus lorem sodales
-        massa mollis pulvinar.
+        with a passion for building software from end to end. My approach to
+        software development is heavily focused on teamwork and I love
+        incorporating retro-futuristic elements!
       </p>
       <p class="introductory-text">
-        Suspendisse condimentum porttitor nisl, non viverra elit elementum sit
-        amet. Vivamus eu dapibus odio, id venenatis quam. Morbi vitae convallis
-        nisi. Proin eu gravida massa, at mattis velit. Duis pretium vulputate
-        nibh, hendrerit imperdiet est tristique vel. Nullam faucibus urna quam,
-        vel condimentum orci elementum at. Phasellus in faucibus sem. Nunc
-        elementum placerat lobortis. Duis mattis quam ligula, ut mollis nisl
-        viverra eu. Sed ac sem a odio varius imperdiet. Sed mauris ante,
-        efficitur vitae pretium eget, euismod id diam. Quisque in lorem iaculis,
-        tincidunt quam id, pellentesque mauris. Morbi neque massa, placerat eu
-        vestibulum vitae, suscipit quis ante. Fusce et libero ac nisi viverra
-        gravida. Nulla nunc purus, aliquam in ullamcorper eget, tincidunt at
-        massa.
+        With {{ yearsOfExperience }} years of experience in the industry, I have
+        honed my skills in developing responsive and user-friendly web
+        applications. Whether it's building a simple website or a complex web
+        application, I always strive to create a seamless user experience that
+        engages and delights users. <br />
+        My interests also span to game development having delved into Unreal
+        Engine 5, Unity and Godot. When not coding, you can find me listening to
+        retro music, playing games, or out on a stroll. I am always looking for
+        new and exciting projects to work on, so please don't hesitate to get in
+        touch if you would like to collaborate!
       </p>
+      <p class="introductory-text">
+        {{ farewell }}
+      </p>
+      <div class="experience">
+        <h4 class="section-title">EXPERIENCE</h4>
+        <ul>
+          <li *ngFor="let job of experience">{{ job }}</li>
+        </ul>
+      </div>
     </div>
     <div class="side-column">
       <div class="proficiencies">
@@ -50,12 +53,6 @@
         <h4 class="section-title">TECHNOLOGIES</h4>
         <ul>
           <li *ngFor="let tech of technologies">{{ tech }}</li>
-        </ul>
-      </div>
-      <div class="experience">
-        <h4 class="section-title">EXPERIENCE</h4>
-        <ul>
-          <li *ngFor="let job of experience">{{ job }}</li>
         </ul>
       </div>
     </div>
