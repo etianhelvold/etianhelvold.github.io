@@ -1,4 +1,16 @@
 .background {
+  background-image: linear-gradient(
+    to top,
+    #0f0209,
+    #330531,
+    #2a0133,
+    #320053,
+    #46035c,
+    #5b036e,
+    #69025d,
+    #83025a
+  );
+  filter: blur(1.5px);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,10 +27,10 @@
   left: -50%;
   width: 200%;
   height: 100%;
-  background-image: linear-gradient(to right, #97088b71 1px, transparent 1px),
-    linear-gradient(to bottom, #97088b49 1px, transparent 1px);
+  background-image: linear-gradient(to right, #ffa27d4f 1px, transparent 1px),
+    linear-gradient(to bottom, #ffa27d4f 1px, transparent 1px);
   background-size: 40px 25px;
-  animation: slide 2.5s linear infinite;
+  animation: slide 4s linear infinite;
 }
 
 @keyframes slide {
@@ -26,7 +38,7 @@
     transform: perspective(200px) rotateX(65deg) translateY(0px);
   }
   100% {
-    transform: perspective(200px) rotateX(65deg) translateY(25px);
+    transform: perspective(200px) rotateX(65deg) translateY(50px);
   }
 }
 
@@ -47,7 +59,7 @@
   height: 150%;
   z-index: 20000;
   overflow: hidden;
-  animation: scanlineMovement 2.5s linear infinite;
+  animation: scanlineMovement 4s linear infinite;
   pointer-events: none;
 }
 
@@ -61,7 +73,6 @@
 }
 
 .container {
-  background-color: #28003ac9;
   color: #fff;
   padding: 20px;
   font-size: 16px;
