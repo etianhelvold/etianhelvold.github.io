@@ -1,3 +1,3 @@
 export const environment = {
-  buildDate: '{BUILD_DATE}',
+  buildDate: Date.now(),
 };
