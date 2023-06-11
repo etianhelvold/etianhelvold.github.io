@@ -7,5 +7,5 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  lastUpdated: Date = environment.buildDate;
+  lastUpdated: Date = new Date(environment.buildDate);
 }
