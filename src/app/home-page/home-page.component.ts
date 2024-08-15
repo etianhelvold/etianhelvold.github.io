@@ -38,7 +38,9 @@ export class HomePageComponent {
   experience: string[] = [
     'Trainee (MAR 2021 - JUN 2022) at Deloitte',
     'Junior Programmer (JUN 2021 - AUG 2022) at Deloitte',
-    'Experienced Programmer (SEP 2022 - Present) at Deloitte',
+    'Experienced Programmer (SEP 2022 - SEP 2023) at Deloitte',
+    'Rockstar Developer (SEP 2023 - MAR 2024) at Critical Techworks',
+    'Full Stack Developer (MAR 2024 - Present) at CGI'
   ];
 
   calculateYearsOfExperience(): string {
